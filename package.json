@@ -1,0 +1,30 @@
+{
+  "name": "nightreign-shuffle",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/hir-247-30/nightreign-shuffle#readme",
+  "bugs": {
+    "url": "https://github.com/hir-247-30/nightreign-shuffle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hir-247-30/nightreign-shuffle.git"
+  },
+  "license": "ISC",
+  "author": "hir-247-30",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "report": "tsx src/handlers/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.2.3",
+    "neverthrow": "^8.2.0",
+    "tsx": "^4.21.0"
+  }
+}
