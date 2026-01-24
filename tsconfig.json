@@ -1,7 +1,8 @@
 {
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "module": "nodenext",
     "target": "esnext",
+    "module": "esnext",
     "types": [],
 
     "sourceMap": true,
@@ -17,5 +18,13 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+    "paths": {
+      "@adapters/*": ["./src/adapters/*"],
+      "@common/*": ["./src/common/*"],
+      "@const/*": ["./src/const/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@services/*": ["./src/services/*"]
+    }
+  },
+  "include": ["./src/**/*.ts"],
 }
