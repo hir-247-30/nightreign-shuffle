@@ -15,7 +15,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "report": "tsx src/handlers/cli.ts"
+    "report": "tsx src/handlers/cli.ts",
+    "web": "npx tsc --noEmit && node esbuild.config.mjs"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.13",
@@ -26,6 +27,7 @@
     "axios": "^1.13.2",
     "discord.js": "^14.25.1",
     "dotenv": "^17.2.3",
+    "esbuild": "^0.27.2",
     "neverthrow": "^8.2.0",
     "tsx": "^4.21.0"
   }

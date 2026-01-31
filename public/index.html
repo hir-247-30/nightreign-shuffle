@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エルデンリング ナイトレイン 夜渡り選出</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h3 class="title">エルデンリング ナイトレイン 夜渡り選出</h3>
+  <div class="container">
+    <div id="error" class="error"></div>
+
+    <div class="inputs">
+      <div class="input-group">
+        <label for="player1">プレイヤー名その1</label>
+        <input type="text" id="player1" maxlength="20">
+      </div>
+      <div class="input-group">
+        <label for="player2">プレイヤー名その2</label>
+        <input type="text" id="player2" maxlength="20">
+      </div>
+      <div class="input-group">
+        <label for="player3">プレイヤー名その3</label>
+        <input type="text" id="player3" maxlength="20">
+      </div>
+    </div>
+
+    <button id="night-walker-select" class="main-button" aria-describedby="result">夜渡りを選出</button>
+
+    <div id="result" class="result" role="region" aria-live="polite" aria-label="夜渡り選出結果">※ ここに結果が出ます。</div>
+    <div class="button-group">
+      <button id="copy-result" class="sub-button" aria-describedby="copy-status">結果をコピーする</button>
+      <div id="copy-status" class="sr-only" aria-live="polite"></div>
+    </div>
+  </div>
+  <script src="nightreign.js"></script>
+</body>
+</html>

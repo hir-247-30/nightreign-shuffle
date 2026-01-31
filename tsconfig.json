@@ -3,7 +3,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "types": [],
+    "moduleResolution": "bundler",
+    "types": ["node"],
 
     "sourceMap": true,
     "declaration": true,
